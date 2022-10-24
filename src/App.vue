@@ -23,8 +23,6 @@ export default {
   controls 
   indicators
   :interval="3000"
-  width="400"
-  height="200"
   ></carousel>
 </template>
 
