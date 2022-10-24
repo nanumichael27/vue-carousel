@@ -5,11 +5,12 @@ import Carousel from './components/carousel/Carousel.vue'
 export default {
   data: () => ({
     slides: [
-      'https://image-placeholder.com/images/actual-size/600x400.png',
-      'https://image-placeholder.com/images/actual-size/600x400.png',
-      'https://image-placeholder.com/images/actual-size/600x400.png',
-      'https://image-placeholder.com/images/actual-size/600x400.png',
-      'https://image-placeholder.com/images/actual-size/600x400.png',
+      'https://image.shutterstock.com/shutterstock/photos/2068574411/display_1500/stock-photo-elderly-man-walking-with-walking-cane-in-hand-behind-his-back-old-man-with-cane-enjoying-walk-in-2068574411.jpg',
+      'https://picsum.photos/900/400',
+      'https://image.shutterstock.com/shutterstock/photos/2068574411/display_1500/stock-photo-elderly-man-walking-with-walking-cane-in-hand-behind-his-back-old-man-with-cane-enjoying-walk-in-2068574411.jpg',
+      'https://picsum.photos/900/400',
+      'https://image.shutterstock.com/shutterstock/photos/2068574411/display_1500/stock-photo-elderly-man-walking-with-walking-cane-in-hand-behind-his-back-old-man-with-cane-enjoying-walk-in-2068574411.jpg',
+      'https://picsum.photos/900/400',
     ]
   }),
   components: {Carousel}
@@ -17,7 +18,14 @@ export default {
 </script>
 
 <template>
-  <carousel :slides="slides" ></carousel>e
+  <carousel 
+  :slides="slides" 
+  controls 
+  indicators
+  :interval="3000"
+  width="400"
+  height="200"
+  ></carousel>
 </template>
 
 <style scoped>
